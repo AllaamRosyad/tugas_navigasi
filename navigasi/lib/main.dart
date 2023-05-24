@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
           Text("Ini Halaman Pertama"),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Home()));
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => Home()));
             },
             child: Text("Pindah Halaman 2"),
           ),
